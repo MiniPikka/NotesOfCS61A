@@ -22,3 +22,8 @@ All of this machinery exists to ensure that names resolve to the correct values 
 function:domain(arguments) --intent(relationship between)--> range(values returned).
 
 	/ & // are shorthand for the truediv and floordiv
+
+	Qualities of a good function.(functions are abstractions)
+1. Each function should have exactly one job. That job should be identifiable with a short name and characterizable in a single line of text. Functions that perform multiple jobs in sequence should be divided into multiple functions.
+2. Don't repeat yourself is a central tenet(宗旨) of software engineering. The so-called DRY principle states that multiple fragments of code should not describe redundant(多余的) logic. Instead, that logic should be implemented once, given a name, and applied multiple times. If you find yourself copying and pasting a block of code, you have probably found an opportunity for functional abstraction.
+3. Functions should be defined generally. Squaring is not in the Python Library precisely because it is a special case of the pow function, which raises numbers to arbitrary powers.
