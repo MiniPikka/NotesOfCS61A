@@ -28,7 +28,7 @@ function:domain(arguments) --intent(relationship between)--> range(values return
 2. Don't repeat yourself is a central tenet(宗旨) of software engineering. The so-called DRY principle states that multiple fragments of code should not describe redundant(多余的) logic. Instead, that logic should be implemented once, given a name, and applied multiple times. If you find yourself copying and pasting a block of code, you have probably found an opportunity for functional abstraction.
 3. Functions should be defined generally. Squaring is not in the Python Library precisely because it is a special case of the pow function, which raises numbers to arbitrary powers.
 
-	an example for a docstring(注释) in a function.
+	an example for a docstring(注释) in a function. Type 'help(pressure)' to see its docstring.
 >>> def pressure(v, t, n):
         """Compute the pressure in pascals of an ideal gas.
 
