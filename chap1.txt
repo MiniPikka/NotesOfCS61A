@@ -1,8 +1,12 @@
-How to debug?
+	How to debug?
 1. Test incrementally(逐步的):Every well-written program is composed of small, modular components that can be tested individually. Try out everything you write as soon as possible to identify problems early and gain confidence in your components.
 2. Isolate errors:An error in the output of a statement can typically be attributed to a particular modular(模块化的) component. When trying to diagnose a problem, trace the error to the smallest fragment(碎片) of code you can before trying to correct it.
 3. Check your assumptions(假设):Interpreters do carry out your instructions to the letter — no more and no less. Their output is unexpected when the behavior of some code does not match what the programmer believes (or assumes) that behavior to be. Know your assumptions, then focus your debugging effort on verifying that your assumptions actually hold.
 4. Consult others
 
-When user-defined function was executed?
+	When user-defined function was executed?
 Notice that the entire def statement is processed in a single step. The body of a function is not executed until the function is called (not when it is defined).
+
+	What are global frame and local frames ?
+This example illustrates many of the fundamental ideas we have developed so far. Names are bound to values, which are distributed across many independent local frames, along with a single global frame that contains shared names. A new local frame is introduced every time a function is called, even if the same function is called twice.
+All of this machinery exists to ensure that names resolve to the correct values at the correct times during program execution. This example illustrates why our model requires the complexity that we have introduced. All three local frames contain a binding for the name x, but that name is bound to different values in different frames. Local frames keep these names separate.
