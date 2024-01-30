@@ -10,3 +10,10 @@ Notice that the entire def statement is processed in a single step. The body of 
 	What are global frame and local frames ?
 This example illustrates many of the fundamental ideas we have developed so far. Names are bound to values, which are distributed across many independent local frames, along with a single global frame that contains shared names. A new local frame is introduced every time a function is called, even if the same function is called twice.
 All of this machinery exists to ensure that names resolve to the correct values at the correct times during program execution. This example illustrates why our model requires the complexity that we have introduced. All three local frames contain a binding for the name x, but that name is bound to different values in different frames. Local frames keep these names separate.
+
+	How to name functions and parameters ?
+1. Function names are lowercase, with words separated by underscores. Descriptive names are encouraged.
+2. Function names typically evoke operations applied to arguments by the interpreter (e.g., print, add, square) or the name of the quantity that results (e.g., max, abs, sum).
+3. Parameter names are lowercase, with words separated by underscores. Single-word names are preferred.
+4. Parameter names should evoke the role of the parameter in the function, not just the kind of argument that is allowed.
+5. Single letter parameter names are acceptable when their role is obvious, but avoid "l" (lowercase ell), "O" (capital oh), or "I" (capital i) to avoid confusion with numerals.
