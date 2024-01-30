@@ -20,3 +20,5 @@ All of this machinery exists to ensure that names resolve to the correct values 
 
 	Attributes of function
 function:domain(arguments) --intent(relationship between)--> range(values returned).
+
+	/ & // are shorthand for the truediv and floordiv
