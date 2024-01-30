@@ -40,3 +40,14 @@ function:domain(arguments) --intent(relationship between)--> range(values return
         """
         k = 1.38e-23  # Boltzmann's constant
         return n * k * t / v
+
+	an example for a function with default parameters.
+>>> def pressure(v, t, n=6.022e23):
+        """Compute the pressure in pascals of an ideal gas.
+
+        v -- volume of gas, in cubic meters
+        t -- absolute temperature in degrees kelvin
+        n -- particles of gas (default: one mole)
+        """
+        k = 1.38e-23  # Boltzmann's constant
+        return n * k * t / v
